@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="ajoutP.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <title>tiktok</title>
+  </head>
+  <body>
+    <main>
+     <div class="container">
+      <h2>Application procedure </h2>
+      <p>After filling the application form , the answer for wheter you'll be a partner will soon be on your way ! this may take from a day to 3 business days !
+      Looking forward to be doing business with you </p>
+      <form class="forms" action="index.html" method="post">
+        <input type="text" name="" placeholder="Shop name ">
+        <input type="email" name="" placeholder="already have a history of selling online ">
+        <input type="text" name="" placeholder="Niche  ">
+
+        <input type="text" name="" placeholder="email ">
+        <input type="password" name="" placeholder="password ">
+        <input type="message" name="" placeholder="Comment / Motif ">
+        <div class="check">
+          <input type="checkbox" name="" value="">
+          <label>Agree on <a href="#" id="terms-sheet">Terms</a>  of services !</label>
+        </div>
+        <button type="submit" name="button">Send Application</button>
+      </form>
+      </div>
+    </main>
+    <div class="terms">
+      <div class="modal">
+        <p>- Orders must be fulfilled in the time span of your choising with no delay wich results in a bad customer experience over-all.</p>
+        <p>- No products deployed without already having them in stock or else another provider ! .</p>
+        <p>- Currency traded with is default MAD . Every transaction such be in MAD or above currencies</p>
+        <p>- Review can and will rate you as a "GOOD" vendor based on product you have fulffiled ! thus multiple reviews result in a BAN.</p>
+        <img src="xxx.png" alt="exit" id="ex">
+      </div>
+
+    </div>
+    <script type="text/javascript">
+    $('.terms').hide();
+    $(document).ready(function() {
+      $('#terms-sheet').click(function() {
+        $('.terms').show();
+      });
+      $('#ex').click(function() {
+        $('.terms').hide();
+      });
+    });
+
+    </script>
+  </body>
+</html>
